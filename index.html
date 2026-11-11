@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VR360 Di tích Khởi nghĩa Yên Thế</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <button id="menuBtn" class="icon-btn" aria-label="Danh sách di tích">
+        &#9776;
+      </button>
+      <div class="brand">
+        <h1 id="tourTitle">VR360 Di tích Khởi nghĩa Yên Thế</h1>
+        <p id="tourSubtitle"></p>
+      </div>
+      <button id="mapBtn" class="btn" hidden>Bản đồ</button>
+    </header>
+
+    <div class="layout">
+      <aside id="sidebar" class="sidebar">
+        <h2>Điểm di tích</h2>
+        <ul id="siteList"></ul>
+      </aside>
+
+      <main class="stage">
+        <div id="mapView" class="view active">
+          <div id="map"></div>
+        </div>
+
+        <section id="viewerView" class="view">
+          <div id="panorama"></div>
+          <div class="viewer-toolbar">
+            <button id="infoBtn" class="btn">Thông tin</button>
+            <button id="audioBtn" class="btn" hidden>Nghe thuyết minh</button>
+          </div>
+          <div id="infoPanel" class="info-panel" hidden>
+            <button id="closeInfo" class="icon-btn" aria-label="Đóng">
+              &times;
+            </button>
+            <h2 id="infoTitle"></h2>
+            <p id="infoLocation" class="muted"></p>
+            <div id="infoText"></div>
+          </div>
+          <div id="sceneStrip" class="scene-strip"></div>
+        </section>
+      </main>
+    </div>
+
+    <audio id="narration" preload="none"></audio>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+{
+  "title": "VR360 Di tích Khởi nghĩa Yên Thế",
+  "subtitle": "Tham quan thực tế ảo các điểm di tích gắn với cuộc khởi nghĩa Yên Thế (1884–1913)",
+  "map": { "center": [21.5355, 106.1110], "zoom": 14 },
+  "sites": [
+    {
+      "id": "don-phon-xuong",
+      "name": "Đồn Phồn Xương",
+      "location": "Phồn Xương, Yên Thế, Bắc Giang",
+      "lat": 21.5362,
+      "lng": 106.1100,
+      "summary": "Căn cứ chính của nghĩa quân Yên Thế do Hoàng Hoa Thám lãnh đạo.",
+      "description": [
+        "Đồn Phồn Xương là căn cứ quan trọng của nghĩa quân Yên Thế dưới sự lãnh đạo của Hoàng Hoa Thám (Đề Thám).",
+        "(Bổ sung nội dung chi tiết từ tài liệu của Ban quản lý di tích.)"
+      ],
+      "audio": "audio/don-phon-xuong.mp3",
+      "firstScene": "dpx-cong",
+      "scenes": [
+        {
+          "id": "dpx-cong",
+          "title": "Cổng đồn",
+          "panorama": "panos/don-phon-xuong/cong.jpg",
+          "thumb": "panos/don-phon-xuong/cong-thumb.jpg",
+          "yaw": 0,
+          "hotSpots": [
+            { "type": "scene", "pitch": -8, "yaw": 0, "text": "Vào trong đồn", "sceneId": "dpx-san" },
+            { "type": "info", "pitch": 5, "yaw": -45, "text": "Cổng đồn – bổ sung thông tin" }
+          ]
+        },
+        {
+          "id": "dpx-san",
+          "title": "Sân trong đồn",
+          "panorama": "panos/don-phon-xuong/san.jpg",
+          "thumb": "panos/don-phon-xuong/san-thumb.jpg",
+          "yaw": 0,
+          "hotSpots": [
+            { "type": "scene", "pitch": -8, "yaw": 180, "text": "Ra cổng đồn", "sceneId": "dpx-cong" },
+            { "type": "info", "pitch": 0, "yaw": 60, "text": "Tượng đài Hoàng Hoa Thám – bổ sung thông tin" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "den-the",
+      "name": "Đền Thề",
+      "location": "Phồn Xương, Yên Thế, Bắc Giang",
+      "lat": 21.5390,
+      "lng": 106.1065,
+      "summary": "Nơi nghĩa quân Yên Thế làm lễ thề trước khi ra trận.",
+      "description": [
+        "Đền Thề gắn với nghi lễ thề nguyện của nghĩa quân Yên Thế.",
+        "(Bổ sung nội dung chi tiết từ tài liệu của Ban quản lý di tích.)"
+      ],
+      "audio": "audio/den-the.mp3",
+      "firstScene": "dt-truoc-den",
+      "scenes": [
+        {
+          "id": "dt-truoc-den",
+          "title": "Trước đền",
+          "panorama": "panos/den-the/truoc-den.jpg",
+          "thumb": "panos/den-the/truoc-den-thumb.jpg",
+          "yaw": 0,
+          "hotSpots": [
+            { "type": "info", "pitch": 0, "yaw": 0, "text": "Đền Thề – bổ sung thông tin" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chua-leo",
+      "name": "Chùa Lèo",
+      "location": "Phồn Xương, Yên Thế, Bắc Giang",
+      "lat": 21.5345,
+      "lng": 106.1130,
+      "summary": "Ngôi chùa gắn với hoạt động của nghĩa quân Yên Thế.",
+      "description": [
+        "Chùa Lèo là một trong các điểm di tích gắn với cuộc khởi nghĩa Yên Thế.",
+        "(Bổ sung nội dung chi tiết từ tài liệu của Ban quản lý di tích.)"
+      ],
+      "audio": "audio/chua-leo.mp3",
+      "firstScene": "cl-tam-quan",
+      "scenes": [
+        {
+          "id": "cl-tam-quan",
+          "title": "Tam quan",
+          "panorama": "panos/chua-leo/tam-quan.jpg",
+          "thumb": "panos/chua-leo/tam-quan-thumb.jpg",
+          "yaw": 0,
+          "hotSpots": [
+            { "type": "scene", "pitch": -8, "yaw": 0, "text": "Vào chính điện", "sceneId": "cl-chinh-dien" }
+          ]
+        },
+        {
+          "id": "cl-chinh-dien",
+          "title": "Chính điện",
+          "panorama": "panos/chua-leo/chinh-dien.jpg",
+          "thumb": "panos/chua-leo/chinh-dien-thumb.jpg",
+          "yaw": 0,
+          "hotSpots": [
+            { "type": "scene", "pitch": -8, "yaw": 180, "text": "Ra tam quan", "sceneId": "cl-tam-quan" },
+            { "type": "info", "pitch": 10, "yaw": 0, "text": "Chính điện – bổ sung thông tin" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chua-tu-giap",
+      "name": "Chùa Tứ Giáp",
+      "location": "Yên Thế, Bắc Giang",
+      "lat": 21.5300,
+      "lng": 106.1200,
+      "summary": "Điểm di tích liên quan đến khởi nghĩa Yên Thế.",
+      "description": [
+        "(Bổ sung nội dung chi tiết về Chùa Tứ Giáp.)"
+      ],
+      "firstScene": "ctg-san",
+      "scenes": [
+        {
+          "id": "ctg-san",
+          "title": "Sân chùa",
+          "panorama": "panos/chua-tu-giap/san.jpg",
+          "thumb": "panos/chua-tu-giap/san-thumb.jpg",
+          "yaw": 0,
+          "hotSpots": []
+        }
+      ]
+    }
+  ]
+}
