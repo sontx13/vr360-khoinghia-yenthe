@@ -3,63 +3,170 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VR360 Di tích Khởi nghĩa Yên Thế</title>
+    <title>Bản đồ số Di sản Yên Thế</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Noto+Serif:wght@600;700&display=swap"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="topbar">
-      <button id="menuBtn" class="icon-btn" aria-label="Danh sách di tích">
-        &#9776;
-      </button>
+    <header class="masthead">
+      <button id="menuBtn" class="icon-btn" aria-label="Danh sách địa điểm">&#9776;</button>
       <div class="brand">
-        <h1 id="tourTitle">VR360 Di tích Khởi nghĩa Yên Thế</h1>
+        <h1 id="tourTitle">Bản đồ số Di sản Yên Thế</h1>
         <p id="tourSubtitle"></p>
       </div>
-      <button id="mapBtn" class="btn" hidden>Bản đồ</button>
+      <nav class="modes" aria-label="Chế độ tham quan">
+        <button id="modeJourney" class="mode-btn">
+          <span aria-hidden="true">&#10148;</span> Hành trình giáo dục
+        </button>
+        <button id="modeFree" class="mode-btn active">
+          <span aria-hidden="true">&#9673;</span> Chọn tự do
+        </button>
+      </nav>
+      <button id="aboutBtn" class="icon-btn" aria-label="Giới thiệu" title="Giới thiệu">&#9432;</button>
     </header>
 
     <div class="layout">
       <aside id="sidebar" class="sidebar">
-        <h2>Điểm di tích</h2>
-        <ul id="siteList"></ul>
+        <section class="panel-block">
+          <h2>Tìm kiếm</h2>
+          <div class="search">
+            <input id="searchInput" type="search" placeholder="Nhập tên địa điểm, nhân vật, xã…" />
+          </div>
+        </section>
+
+        <section class="panel-block">
+          <h2>Bộ lọc</h2>
+          <fieldset>
+            <legend>Loại địa điểm</legend>
+            <div id="groupFilters"></div>
+          </fieldset>
+          <fieldset>
+            <legend>Hình thức di tích</legend>
+            <div id="categoryFilters"></div>
+          </fieldset>
+        </section>
+
+        <section class="panel-block list-block">
+          <h2>Danh sách địa điểm <span id="siteCount" class="count"></span></h2>
+          <ol id="siteList" class="site-list"></ol>
+        </section>
       </aside>
 
       <main class="stage">
+        <!-- Map view -->
         <div id="mapView" class="view active">
           <div id="map"></div>
+
+          <div class="legend">
+            <h3>Chú giải</h3>
+            <div id="legendItems"></div>
+            <p id="coordsNote" class="note"></p>
+          </div>
+
+          <div id="journeyPanel" class="journey-panel" hidden>
+            <div class="journey-head">
+              <strong>Hành trình giáo dục</strong>
+              <span id="journeyStep"></span>
+            </div>
+            <ol id="journeyStages" class="journey-stages"></ol>
+            <div id="journeyCurrent" class="journey-current"></div>
+            <div class="journey-nav">
+              <button id="journeyPrev" class="btn">&lsaquo; Điểm trước</button>
+              <button id="journey360" class="btn btn-green">360°</button>
+              <button id="journeyNext" class="btn btn-primary">Điểm tiếp theo &rsaquo;</button>
+            </div>
+          </div>
         </div>
 
-        <section id="viewerView" class="view">
-          <div id="panorama"></div>
-          <div class="viewer-toolbar">
-            <button id="infoBtn" class="btn">Thông tin</button>
-            <button id="audioBtn" class="btn" hidden>Nghe thuyết minh</button>
-          </div>
-          <div id="infoPanel" class="info-panel" hidden>
-            <button id="closeInfo" class="icon-btn" aria-label="Đóng">
-              &times;
-            </button>
+        <!-- 360 viewer view -->
+        <section id="viewerView" class="view viewer">
+          <aside class="viewer-info">
+            <nav class="crumbs">
+              <button id="backToMap" class="link-btn">Bản đồ</button> ›
+              <span>Tham quan 360°</span> ›
+              <strong id="crumbSite"></strong>
+            </nav>
             <h2 id="infoTitle"></h2>
             <p id="infoLocation" class="muted"></p>
-            <div id="infoText"></div>
+            <div id="infoText" class="info-text"></div>
+            <div class="viewer-actions">
+              <button id="audioBtn" class="btn">Nghe thuyết minh</button>
+              <button id="viewerPrev" class="btn" hidden>&lsaquo; Điểm trước</button>
+              <button id="viewerNext" class="btn btn-primary" hidden>Điểm tiếp theo &rsaquo;</button>
+              <button id="backToMap2" class="btn btn-outline">&#128506; Quay lại bản đồ</button>
+            </div>
+          </aside>
+          <div class="viewer-main">
+            <div id="panorama"></div>
+            <div id="sceneCaption" class="scene-caption"></div>
+            <div id="sceneStrip" class="scene-strip"></div>
           </div>
-          <div id="sceneStrip" class="scene-strip"></div>
         </section>
       </main>
     </div>
+
+    <!-- AI assistant -->
+    <button id="aiFab" class="ai-fab" aria-label="Hỏi trợ lý AI">
+      <span aria-hidden="true">&#128172;</span>
+      <strong>Hỏi AI</strong>
+    </button>
+    <aside id="aiPanel" class="ai-panel" hidden aria-label="Trợ lý AI">
+      <header class="ai-head">
+        <span class="ai-avatar" aria-hidden="true">&#129302;</span>
+        <h2 id="aiTitle">Trợ lý AI Di sản Yên Thế</h2>
+        <button id="aiClose" class="icon-btn" aria-label="Đóng">&times;</button>
+      </header>
+      <div class="ai-chips">
+        <button data-ask="Tìm các căn cứ của Đề Thám">&#128269; Tìm di tích</button>
+        <button data-ask="Kể về khởi nghĩa Yên Thế">&#128214; Hỏi lịch sử</button>
+        <button data-ask="Tham quan 360 Đồn Phồn Xương">360° Tham quan</button>
+        <button data-ask="Bắt đầu hành trình giáo dục">&#10148; Hành trình</button>
+      </div>
+      <div id="aiLog" class="ai-log" aria-live="polite"></div>
+      <form id="aiForm" class="ai-form">
+        <button type="button" id="aiMic" class="icon-btn mic" aria-label="Hỏi bằng giọng nói" title="Hỏi bằng giọng nói">&#127908;</button>
+        <input id="aiInput" type="text" autocomplete="off" placeholder="Nhập câu hỏi…" />
+        <button type="submit" class="btn btn-primary" aria-label="Gửi">Gửi</button>
+      </form>
+      <label class="ai-voice">
+        <input id="aiSpeak" type="checkbox" /> Đọc câu trả lời bằng giọng nói
+      </label>
+    </aside>
+
+    <!-- Site detail -->
+    <dialog id="detailDialog" class="dialog">
+      <button class="icon-btn dialog-close" data-close aria-label="Đóng">&times;</button>
+      <p id="detailBadge" class="badge"></p>
+      <h2 id="detailTitle"></h2>
+      <p id="detailLocation" class="muted"></p>
+      <div id="detailText" class="info-text"></div>
+      <div class="dialog-actions">
+        <button id="detail360" class="btn btn-green">360° Tham quan 360°</button>
+        <a id="detailDirections" class="btn" target="_blank" rel="noopener">Chỉ đường</a>
+        <button id="detailAsk" class="btn">Hỏi AI về địa điểm này</button>
+      </div>
+    </dialog>
+
+    <!-- About -->
+    <dialog id="aboutDialog" class="dialog">
+      <button class="icon-btn dialog-close" data-close aria-label="Đóng">&times;</button>
+      <h2 id="aboutTitle"></h2>
+      <h3 id="aboutHeading"></h3>
+      <ol id="aboutPoints" class="about-points"></ol>
+    </dialog>
 
     <audio id="narration" preload="none"></audio>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <script src="js/assistant.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

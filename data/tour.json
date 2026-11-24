@@ -1,21 +1,102 @@
 {
-  "title": "VR360 Di tích Khởi nghĩa Yên Thế",
-  "subtitle": "Tham quan thực tế ảo các điểm di tích gắn với cuộc khởi nghĩa Yên Thế (1884–1913)",
-  "map": { "center": [21.5355, 106.1110], "zoom": 14 },
+  "title": "Bản đồ số Di tích quốc gia đặc biệt “Những địa điểm Khởi nghĩa Yên Thế” và hành trình kết nối giá trị di sản",
+  "shortTitle": "Bản đồ số Di sản Yên Thế",
+  "subtitle": "26 địa điểm lịch sử và văn hóa",
+  "coordsNote": "Tọa độ hiện là gần đúng theo địa bàn xã – cần cập nhật tọa độ thực địa.",
+  "about": {
+    "heading": "Vì sao chọn tên này?",
+    "points": [
+      [
+        "Chính xác về lịch sử và pháp lý",
+        "Giữ nguyên tên Di tích quốc gia đặc biệt “Những địa điểm Khởi nghĩa Yên Thế”, khẳng định đây là nội dung trung tâm của bản đồ số."
+      ],
+      [
+        "Giải thích hợp lý việc bổ sung ba địa điểm",
+        "Cụm từ “Hành trình kết nối giá trị di sản” bao quát Chùa Tứ Giáp, Khu lưu niệm Sáu điều Bác Hồ dạy Công an nhân dân và Chùa Phúc Sơn mà không gây hiểu nhầm chúng thuộc phạm vi xếp hạng di tích quốc gia đặc biệt."
+      ],
+      [
+        "Có mục tiêu giáo dục rõ ràng",
+        "Thể hiện hành trình từ tìm hiểu truyền thống yêu nước, học tập các giá trị đạo đức đến hành động gìn giữ di sản quê hương."
+      ],
+      [
+        "Phù hợp với sản phẩm công nghệ",
+        "Có thể sử dụng lâu dài cho website, bản đồ tương tác, tham quan 360°, trợ lý AI và hoạt động giáo dục trải nghiệm."
+      ]
+    ]
+  },
+  "map": {
+    "center": [
+      21.42,
+      106.11
+    ],
+    "zoom": 11
+  },
+  "groups": {
+    "core": {
+      "label": "Khởi nghĩa Yên Thế",
+      "legend": "23 điểm Khởi nghĩa Yên Thế",
+      "legendNote": "Di tích quốc gia đặc biệt",
+      "color": "#2f6b3a"
+    },
+    "extended": {
+      "label": "Điểm mở rộng",
+      "legend": "3 điểm mở rộng",
+      "legendNote": "Hành trình kết nối giá trị di sản",
+      "color": "#a35a24"
+    }
+  },
+  "categories": {
+    "don": "Đồn, căn cứ, hang động",
+    "den": "Đền, đình, miếu",
+    "chua": "Chùa, cơ sở tôn giáo",
+    "khac": "Khu lưu niệm, di tích khác"
+  },
+  "journey": {
+    "title": "Hành trình giáo dục",
+    "stages": [
+      {
+        "label": "23 địa điểm Di tích quốc gia đặc biệt Khởi nghĩa Yên Thế",
+        "from": 1,
+        "to": 23
+      },
+      {
+        "label": "Chùa Tứ Giáp – nơi khởi phát Sáu điều Bác Hồ dạy CAND",
+        "from": 24,
+        "to": 24
+      },
+      {
+        "label": "Khu lưu niệm Sáu điều Bác Hồ dạy CAND",
+        "from": 25,
+        "to": 25
+      },
+      {
+        "label": "Chùa Phúc Sơn",
+        "from": 26,
+        "to": 26
+      }
+    ]
+  },
   "sites": [
     {
       "id": "don-phon-xuong",
       "name": "Đồn Phồn Xương",
-      "location": "Phồn Xương, Yên Thế, Bắc Giang",
+      "group": "core",
+      "category": "don",
+      "oldArea": "TT Cầu Gồ",
+      "newArea": "Xã Yên Thế",
       "lat": 21.5362,
-      "lng": 106.1100,
-      "summary": "Căn cứ chính của nghĩa quân Yên Thế do Hoàng Hoa Thám lãnh đạo.",
+      "lng": 106.11,
+      "approxCoords": true,
+      "summary": "Đại bản doanh của Hoàng Hoa Thám",
       "description": [
-        "Đồn Phồn Xương là căn cứ quan trọng của nghĩa quân Yên Thế dưới sự lãnh đạo của Hoàng Hoa Thám (Đề Thám).",
-        "(Bổ sung nội dung chi tiết từ tài liệu của Ban quản lý di tích.)"
+        "Một trong 23 địa điểm thuộc Di tích quốc gia đặc biệt “Những địa điểm Khởi nghĩa Yên Thế” (1884–1913).",
+        "Đồn Phồn Xương là đại bản doanh, trung tâm chỉ huy của nghĩa quân Yên Thế dưới sự lãnh đạo của Hoàng Hoa Thám (Đề Thám).",
+        "(Bổ sung nội dung chi tiết từ hồ sơ khoa học di tích của Ban quản lý.)"
       ],
-      "audio": "audio/don-phon-xuong.mp3",
-      "firstScene": "dpx-cong",
+      "tags": [
+        "hoang-hoa-tham",
+        "can-cu"
+      ],
       "scenes": [
         {
           "id": "dpx-cong",
@@ -23,9 +104,21 @@
           "panorama": "panos/don-phon-xuong/cong.jpg",
           "thumb": "panos/don-phon-xuong/cong-thumb.jpg",
           "yaw": 0,
+          "info": "Khu vực cổng đồn Phồn Xương – lối ra vào căn cứ của nghĩa quân.",
           "hotSpots": [
-            { "type": "scene", "pitch": -8, "yaw": 0, "text": "Vào trong đồn", "sceneId": "dpx-san" },
-            { "type": "info", "pitch": 5, "yaw": -45, "text": "Cổng đồn – bổ sung thông tin" }
+            {
+              "type": "scene",
+              "pitch": -8,
+              "yaw": 0,
+              "text": "Vào trong đồn",
+              "sceneId": "dpx-san"
+            },
+            {
+              "type": "info",
+              "pitch": 5,
+              "yaw": -45,
+              "text": "Cổng đồn – bổ sung thông tin"
+            }
           ]
         },
         {
@@ -34,26 +127,47 @@
           "panorama": "panos/don-phon-xuong/san.jpg",
           "thumb": "panos/don-phon-xuong/san-thumb.jpg",
           "yaw": 0,
+          "info": "Sân trong đồn Phồn Xương, nơi có tượng đài Hoàng Hoa Thám.",
           "hotSpots": [
-            { "type": "scene", "pitch": -8, "yaw": 180, "text": "Ra cổng đồn", "sceneId": "dpx-cong" },
-            { "type": "info", "pitch": 0, "yaw": 60, "text": "Tượng đài Hoàng Hoa Thám – bổ sung thông tin" }
+            {
+              "type": "scene",
+              "pitch": -8,
+              "yaw": 180,
+              "text": "Ra cổng đồn",
+              "sceneId": "dpx-cong"
+            },
+            {
+              "type": "info",
+              "pitch": 0,
+              "yaw": 60,
+              "text": "Tượng đài Hoàng Hoa Thám – bổ sung thông tin"
+            }
           ]
         }
-      ]
+      ],
+      "firstScene": "dpx-cong",
+      "audio": "audio/don-phon-xuong.mp3",
+      "order": 1
     },
     {
       "id": "den-the",
       "name": "Đền Thề",
-      "location": "Phồn Xương, Yên Thế, Bắc Giang",
-      "lat": 21.5390,
+      "group": "core",
+      "category": "den",
+      "oldArea": "TT Cầu Gồ",
+      "newArea": "Xã Yên Thế",
+      "lat": 21.539,
       "lng": 106.1065,
-      "summary": "Nơi nghĩa quân Yên Thế làm lễ thề trước khi ra trận.",
+      "approxCoords": true,
+      "summary": "Nơi nghĩa quân lập lời thề chống Pháp",
       "description": [
-        "Đền Thề gắn với nghi lễ thề nguyện của nghĩa quân Yên Thế.",
-        "(Bổ sung nội dung chi tiết từ tài liệu của Ban quản lý di tích.)"
+        "Một trong 23 địa điểm thuộc Di tích quốc gia đặc biệt “Những địa điểm Khởi nghĩa Yên Thế” (1884–1913).",
+        "Đền Thề gắn với nghi lễ thề nguyện của nghĩa quân Yên Thế trước khi ra trận.",
+        "(Bổ sung nội dung chi tiết từ hồ sơ khoa học di tích của Ban quản lý.)"
       ],
-      "audio": "audio/den-the.mp3",
-      "firstScene": "dt-truoc-den",
+      "tags": [
+        "hoang-hoa-tham"
+      ],
       "scenes": [
         {
           "id": "dt-truoc-den",
@@ -61,25 +175,80 @@
           "panorama": "panos/den-the/truoc-den.jpg",
           "thumb": "panos/den-the/truoc-den-thumb.jpg",
           "yaw": 0,
+          "info": "Không gian phía trước Đền Thề.",
           "hotSpots": [
-            { "type": "info", "pitch": 0, "yaw": 0, "text": "Đền Thề – bổ sung thông tin" }
+            {
+              "type": "info",
+              "pitch": 0,
+              "yaw": 0,
+              "text": "Đền Thề – bổ sung thông tin"
+            }
           ]
         }
-      ]
+      ],
+      "firstScene": "dt-truoc-den",
+      "audio": "audio/den-the.mp3",
+      "order": 2
+    },
+    {
+      "id": "don-ho-chuoi",
+      "name": "Đồn Hố Chuối",
+      "group": "core",
+      "category": "don",
+      "oldArea": "Xã Phồn Xương",
+      "newArea": "Xã Yên Thế",
+      "lat": 21.525,
+      "lng": 106.095,
+      "approxCoords": true,
+      "summary": "Căn cứ quan trọng của nghĩa quân",
+      "description": [
+        "Một trong 23 địa điểm thuộc Di tích quốc gia đặc biệt “Những địa điểm Khởi nghĩa Yên Thế” (1884–1913).",
+        "Đồn Hố Chuối là một căn cứ quan trọng của nghĩa quân Yên Thế.",
+        "(Bổ sung nội dung chi tiết từ hồ sơ khoa học di tích của Ban quản lý.)"
+      ],
+      "tags": [
+        "hoang-hoa-tham",
+        "can-cu"
+      ],
+      "scenes": [
+        {
+          "id": "don-ho-chuoi-toan-canh",
+          "title": "Toàn cảnh (ảnh mẫu)",
+          "panorama": "panos/don-ho-chuoi/toan-canh.jpg",
+          "thumb": "panos/don-ho-chuoi/toan-canh-thumb.jpg",
+          "yaw": 0,
+          "sample": true,
+          "info": "Ảnh 360° mẫu minh họa không gian Đồn Hố Chuối – cần thay bằng ảnh chụp thực tế.",
+          "hotSpots": [
+            {
+              "type": "info",
+              "pitch": 4,
+              "yaw": 0,
+              "text": "Đồn Hố Chuối – ảnh mẫu minh họa, chưa phải ảnh thực địa"
+            }
+          ]
+        }
+      ],
+      "order": 3,
+      "firstScene": "don-ho-chuoi-toan-canh"
     },
     {
       "id": "chua-leo",
       "name": "Chùa Lèo",
-      "location": "Phồn Xương, Yên Thế, Bắc Giang",
+      "group": "core",
+      "category": "chua",
+      "oldArea": "Xã Phồn Xương",
+      "newArea": "Xã Yên Thế",
       "lat": 21.5345,
-      "lng": 106.1130,
-      "summary": "Ngôi chùa gắn với hoạt động của nghĩa quân Yên Thế.",
+      "lng": 106.113,
+      "approxCoords": true,
+      "summary": "Ngôi chùa gắn với hoạt động của nghĩa quân",
       "description": [
+        "Một trong 23 địa điểm thuộc Di tích quốc gia đặc biệt “Những địa điểm Khởi nghĩa Yên Thế” (1884–1913).",
         "Chùa Lèo là một trong các điểm di tích gắn với cuộc khởi nghĩa Yên Thế.",
-        "(Bổ sung nội dung chi tiết từ tài liệu của Ban quản lý di tích.)"
+        "(Bổ sung nội dung chi tiết từ hồ sơ khoa học di tích của Ban quản lý.)"
       ],
-      "audio": "audio/chua-leo.mp3",
-      "firstScene": "cl-tam-quan",
+      "tags": [],
       "scenes": [
         {
           "id": "cl-tam-quan",
@@ -87,8 +256,15 @@
           "panorama": "panos/chua-leo/tam-quan.jpg",
           "thumb": "panos/chua-leo/tam-quan-thumb.jpg",
           "yaw": 0,
+          "info": "Tam quan chùa Lèo.",
           "hotSpots": [
-            { "type": "scene", "pitch": -8, "yaw": 0, "text": "Vào chính điện", "sceneId": "cl-chinh-dien" }
+            {
+              "type": "scene",
+              "pitch": -8,
+              "yaw": 0,
+              "text": "Vào chính điện",
+              "sceneId": "cl-chinh-dien"
+            }
           ]
         },
         {
@@ -97,24 +273,783 @@
           "panorama": "panos/chua-leo/chinh-dien.jpg",
           "thumb": "panos/chua-leo/chinh-dien-thumb.jpg",
           "yaw": 0,
+          "info": "Chính điện chùa Lèo.",
           "hotSpots": [
-            { "type": "scene", "pitch": -8, "yaw": 180, "text": "Ra tam quan", "sceneId": "cl-tam-quan" },
-            { "type": "info", "pitch": 10, "yaw": 0, "text": "Chính điện – bổ sung thông tin" }
+            {
+              "type": "scene",
+              "pitch": -8,
+              "yaw": 180,
+              "text": "Ra tam quan",
+              "sceneId": "cl-tam-quan"
+            },
+            {
+              "type": "info",
+              "pitch": 10,
+              "yaw": 0,
+              "text": "Chính điện – bổ sung thông tin"
+            }
           ]
         }
-      ]
+      ],
+      "firstScene": "cl-tam-quan",
+      "audio": "audio/chua-leo.mp3",
+      "order": 4
+    },
+    {
+      "id": "dinh-dinh-thep",
+      "name": "Đình Dĩnh Thép",
+      "group": "core",
+      "category": "den",
+      "oldArea": "Xã Tân Hiệp",
+      "newArea": "Xã Yên Thế",
+      "lat": 21.558,
+      "lng": 106.135,
+      "approxCoords": true,
+      "summary": "Đình làng thuộc cụm di tích Khởi nghĩa Yên Thế",
+      "description": [
+        "Một trong 23 địa điểm thuộc Di tích quốc gia đặc biệt “Những địa điểm Khởi nghĩa Yên Thế” (1884–1913).",
+        "(Bổ sung nội dung chi tiết từ hồ sơ khoa học di tích của Ban quản lý.)"
+      ],
+      "tags": [],
+      "scenes": [
+        {
+          "id": "dinh-dinh-thep-toan-canh",
+          "title": "Toàn cảnh (ảnh mẫu)",
+          "panorama": "panos/dinh-dinh-thep/toan-canh.jpg",
+          "thumb": "panos/dinh-dinh-thep/toan-canh-thumb.jpg",
+          "yaw": 0,
+          "sample": true,
+          "info": "Ảnh 360° mẫu minh họa không gian Đình Dĩnh Thép – cần thay bằng ảnh chụp thực tế.",
+          "hotSpots": [
+            {
+              "type": "info",
+              "pitch": 4,
+              "yaw": 0,
+              "text": "Đình Dĩnh Thép – ảnh mẫu minh họa, chưa phải ảnh thực địa"
+            }
+          ]
+        }
+      ],
+      "order": 5,
+      "firstScene": "dinh-dinh-thep-toan-canh"
+    },
+    {
+      "id": "chua-thong",
+      "name": "Chùa Thông",
+      "group": "core",
+      "category": "chua",
+      "oldArea": "Xã Đồng Lạc",
+      "newArea": "Xã Yên Thế",
+      "lat": 21.495,
+      "lng": 106.115,
+      "approxCoords": true,
+      "summary": "Chùa thuộc cụm di tích Khởi nghĩa Yên Thế",
+      "description": [
+        "Một trong 23 địa điểm thuộc Di tích quốc gia đặc biệt “Những địa điểm Khởi nghĩa Yên Thế” (1884–1913).",
+        "(Bổ sung nội dung chi tiết từ hồ sơ khoa học di tích của Ban quản lý.)"
+      ],
+      "tags": [],
+      "scenes": [
+        {
+          "id": "chua-thong-toan-canh",
+          "title": "Toàn cảnh (ảnh mẫu)",
+          "panorama": "panos/chua-thong/toan-canh.jpg",
+          "thumb": "panos/chua-thong/toan-canh-thumb.jpg",
+          "yaw": 0,
+          "sample": true,
+          "info": "Ảnh 360° mẫu minh họa không gian Chùa Thông – cần thay bằng ảnh chụp thực tế.",
+          "hotSpots": [
+            {
+              "type": "info",
+              "pitch": 4,
+              "yaw": 0,
+              "text": "Chùa Thông – ảnh mẫu minh họa, chưa phải ảnh thực địa"
+            }
+          ]
+        }
+      ],
+      "order": 6,
+      "firstScene": "chua-thong-toan-canh"
+    },
+    {
+      "id": "don-hom",
+      "name": "Đồn Hom",
+      "group": "core",
+      "category": "don",
+      "oldArea": "Xã Tam Hiệp",
+      "newArea": "Xã Yên Thế",
+      "lat": 21.56,
+      "lng": 106.07,
+      "approxCoords": true,
+      "summary": "Đồn, căn cứ của nghĩa quân Yên Thế",
+      "description": [
+        "Một trong 23 địa điểm thuộc Di tích quốc gia đặc biệt “Những địa điểm Khởi nghĩa Yên Thế” (1884–1913).",
+        "(Bổ sung nội dung chi tiết từ hồ sơ khoa học di tích của Ban quản lý.)"
+      ],
+      "tags": [
+        "hoang-hoa-tham",
+        "can-cu"
+      ],
+      "scenes": [
+        {
+          "id": "don-hom-toan-canh",
+          "title": "Toàn cảnh (ảnh mẫu)",
+          "panorama": "panos/don-hom/toan-canh.jpg",
+          "thumb": "panos/don-hom/toan-canh-thumb.jpg",
+          "yaw": 0,
+          "sample": true,
+          "info": "Ảnh 360° mẫu minh họa không gian Đồn Hom – cần thay bằng ảnh chụp thực tế.",
+          "hotSpots": [
+            {
+              "type": "info",
+              "pitch": 4,
+              "yaw": 0,
+              "text": "Đồn Hom – ảnh mẫu minh họa, chưa phải ảnh thực địa"
+            }
+          ]
+        }
+      ],
+      "order": 7,
+      "firstScene": "don-hom-toan-canh"
+    },
+    {
+      "id": "den-cau-khoai",
+      "name": "Đền Cầu Khoai",
+      "group": "core",
+      "category": "den",
+      "oldArea": "Xã Tam Hiệp",
+      "newArea": "Xã Yên Thế",
+      "lat": 21.552,
+      "lng": 106.062,
+      "approxCoords": true,
+      "summary": "Đền thuộc cụm di tích Khởi nghĩa Yên Thế",
+      "description": [
+        "Một trong 23 địa điểm thuộc Di tích quốc gia đặc biệt “Những địa điểm Khởi nghĩa Yên Thế” (1884–1913).",
+        "(Bổ sung nội dung chi tiết từ hồ sơ khoa học di tích của Ban quản lý.)"
+      ],
+      "tags": [],
+      "scenes": [
+        {
+          "id": "den-cau-khoai-toan-canh",
+          "title": "Toàn cảnh (ảnh mẫu)",
+          "panorama": "panos/den-cau-khoai/toan-canh.jpg",
+          "thumb": "panos/den-cau-khoai/toan-canh-thumb.jpg",
+          "yaw": 0,
+          "sample": true,
+          "info": "Ảnh 360° mẫu minh họa không gian Đền Cầu Khoai – cần thay bằng ảnh chụp thực tế.",
+          "hotSpots": [
+            {
+              "type": "info",
+              "pitch": 4,
+              "yaw": 0,
+              "text": "Đền Cầu Khoai – ảnh mẫu minh họa, chưa phải ảnh thực địa"
+            }
+          ]
+        }
+      ],
+      "order": 8,
+      "firstScene": "den-cau-khoai-toan-canh"
+    },
+    {
+      "id": "dong-thien-thai",
+      "name": "Động Thiên Thai",
+      "group": "core",
+      "category": "don",
+      "oldArea": "Xã Đồng Kỳ",
+      "newArea": "Xã Đồng Kỳ",
+      "lat": 21.4957,
+      "lng": 106.1604,
+      "approxCoords": true,
+      "summary": "Hang động gắn với hoạt động của nghĩa quân",
+      "description": [
+        "Một trong 23 địa điểm thuộc Di tích quốc gia đặc biệt “Những địa điểm Khởi nghĩa Yên Thế” (1884–1913).",
+        "(Bổ sung nội dung chi tiết từ hồ sơ khoa học di tích của Ban quản lý.)"
+      ],
+      "tags": [
+        "can-cu"
+      ],
+      "scenes": [
+        {
+          "id": "dong-thien-thai-toan-canh",
+          "title": "Toàn cảnh (ảnh mẫu)",
+          "panorama": "panos/dong-thien-thai/toan-canh.jpg",
+          "thumb": "panos/dong-thien-thai/toan-canh-thumb.jpg",
+          "yaw": 0,
+          "sample": true,
+          "info": "Ảnh 360° mẫu minh họa không gian Động Thiên Thai – cần thay bằng ảnh chụp thực tế.",
+          "hotSpots": [
+            {
+              "type": "info",
+              "pitch": 4,
+              "yaw": 0,
+              "text": "Động Thiên Thai – ảnh mẫu minh họa, chưa phải ảnh thực địa"
+            }
+          ]
+        }
+      ],
+      "order": 9,
+      "firstScene": "dong-thien-thai-toan-canh"
+    },
+    {
+      "id": "dinh-chua-ha",
+      "name": "Đình, chùa Hả",
+      "group": "core",
+      "category": "den",
+      "oldArea": "Xã Tân Trung",
+      "newArea": "Xã Nhã Nam",
+      "lat": 21.4436,
+      "lng": 106.1232,
+      "approxCoords": true,
+      "summary": "Cụm đình – chùa thuộc di tích Khởi nghĩa Yên Thế",
+      "description": [
+        "Một trong 23 địa điểm thuộc Di tích quốc gia đặc biệt “Những địa điểm Khởi nghĩa Yên Thế” (1884–1913).",
+        "(Bổ sung nội dung chi tiết từ hồ sơ khoa học di tích của Ban quản lý.)"
+      ],
+      "tags": [],
+      "scenes": [
+        {
+          "id": "dinh-chua-ha-toan-canh",
+          "title": "Toàn cảnh (ảnh mẫu)",
+          "panorama": "panos/dinh-chua-ha/toan-canh.jpg",
+          "thumb": "panos/dinh-chua-ha/toan-canh-thumb.jpg",
+          "yaw": 0,
+          "sample": true,
+          "info": "Ảnh 360° mẫu minh họa không gian Đình, chùa Hả – cần thay bằng ảnh chụp thực tế.",
+          "hotSpots": [
+            {
+              "type": "info",
+              "pitch": 4,
+              "yaw": 0,
+              "text": "Đình, chùa Hả – ảnh mẫu minh họa, chưa phải ảnh thực địa"
+            }
+          ]
+        }
+      ],
+      "order": 10,
+      "firstScene": "dinh-chua-ha-toan-canh"
+    },
+    {
+      "id": "dinh-duong-lam",
+      "name": "Đình Dương Lâm",
+      "group": "core",
+      "category": "den",
+      "oldArea": "Xã An Dương",
+      "newArea": "Xã Nhã Nam",
+      "lat": 21.43,
+      "lng": 106.075,
+      "approxCoords": true,
+      "summary": "Đình làng thuộc cụm di tích Khởi nghĩa Yên Thế",
+      "description": [
+        "Một trong 23 địa điểm thuộc Di tích quốc gia đặc biệt “Những địa điểm Khởi nghĩa Yên Thế” (1884–1913).",
+        "(Bổ sung nội dung chi tiết từ hồ sơ khoa học di tích của Ban quản lý.)"
+      ],
+      "tags": [],
+      "scenes": [
+        {
+          "id": "dinh-duong-lam-toan-canh",
+          "title": "Toàn cảnh (ảnh mẫu)",
+          "panorama": "panos/dinh-duong-lam/toan-canh.jpg",
+          "thumb": "panos/dinh-duong-lam/toan-canh-thumb.jpg",
+          "yaw": 0,
+          "sample": true,
+          "info": "Ảnh 360° mẫu minh họa không gian Đình Dương Lâm – cần thay bằng ảnh chụp thực tế.",
+          "hotSpots": [
+            {
+              "type": "info",
+              "pitch": 4,
+              "yaw": 0,
+              "text": "Đình Dương Lâm – ảnh mẫu minh họa, chưa phải ảnh thực địa"
+            }
+          ]
+        }
+      ],
+      "order": 11,
+      "firstScene": "dinh-duong-lam-toan-canh"
+    },
+    {
+      "id": "dinh-lang-chuong",
+      "name": "Đình làng Chương",
+      "group": "core",
+      "category": "den",
+      "oldArea": "TT Nhã Nam",
+      "newArea": "Xã Nhã Nam",
+      "lat": 21.4465,
+      "lng": 106.096,
+      "approxCoords": true,
+      "summary": "Đình làng thuộc cụm di tích Khởi nghĩa Yên Thế",
+      "description": [
+        "Một trong 23 địa điểm thuộc Di tích quốc gia đặc biệt “Những địa điểm Khởi nghĩa Yên Thế” (1884–1913).",
+        "(Bổ sung nội dung chi tiết từ hồ sơ khoa học di tích của Ban quản lý.)"
+      ],
+      "tags": [],
+      "scenes": [
+        {
+          "id": "dinh-lang-chuong-toan-canh",
+          "title": "Toàn cảnh (ảnh mẫu)",
+          "panorama": "panos/dinh-lang-chuong/toan-canh.jpg",
+          "thumb": "panos/dinh-lang-chuong/toan-canh-thumb.jpg",
+          "yaw": 0,
+          "sample": true,
+          "info": "Ảnh 360° mẫu minh họa không gian Đình làng Chương – cần thay bằng ảnh chụp thực tế.",
+          "hotSpots": [
+            {
+              "type": "info",
+              "pitch": 4,
+              "yaw": 0,
+              "text": "Đình làng Chương – ảnh mẫu minh họa, chưa phải ảnh thực địa"
+            }
+          ]
+        }
+      ],
+      "order": 12,
+      "firstScene": "dinh-lang-chuong-toan-canh"
+    },
+    {
+      "id": "chua-pho",
+      "name": "Chùa Phổ (Nam Thiên tự)",
+      "group": "core",
+      "category": "chua",
+      "oldArea": "TT Nhã Nam",
+      "newArea": "Xã Nhã Nam",
+      "lat": 21.444,
+      "lng": 106.099,
+      "approxCoords": true,
+      "summary": "Chùa thuộc cụm di tích Khởi nghĩa Yên Thế",
+      "description": [
+        "Một trong 23 địa điểm thuộc Di tích quốc gia đặc biệt “Những địa điểm Khởi nghĩa Yên Thế” (1884–1913).",
+        "(Bổ sung nội dung chi tiết từ hồ sơ khoa học di tích của Ban quản lý.)"
+      ],
+      "tags": [],
+      "scenes": [
+        {
+          "id": "chua-pho-toan-canh",
+          "title": "Toàn cảnh (ảnh mẫu)",
+          "panorama": "panos/chua-pho/toan-canh.jpg",
+          "thumb": "panos/chua-pho/toan-canh-thumb.jpg",
+          "yaw": 0,
+          "sample": true,
+          "info": "Ảnh 360° mẫu minh họa không gian Chùa Phổ (Nam Thiên tự) – cần thay bằng ảnh chụp thực tế.",
+          "hotSpots": [
+            {
+              "type": "info",
+              "pitch": 4,
+              "yaw": 0,
+              "text": "Chùa Phổ (Nam Thiên tự) – ảnh mẫu minh họa, chưa phải ảnh thực địa"
+            }
+          ]
+        }
+      ],
+      "order": 13,
+      "firstScene": "chua-pho-toan-canh"
+    },
+    {
+      "id": "ao-chan-ky",
+      "name": "Ao Chấn Kỳ",
+      "group": "core",
+      "category": "khac",
+      "oldArea": "TT Nhã Nam",
+      "newArea": "Xã Nhã Nam",
+      "lat": 21.4425,
+      "lng": 106.094,
+      "approxCoords": true,
+      "summary": "Địa điểm thuộc cụm di tích Khởi nghĩa Yên Thế",
+      "description": [
+        "Một trong 23 địa điểm thuộc Di tích quốc gia đặc biệt “Những địa điểm Khởi nghĩa Yên Thế” (1884–1913).",
+        "(Bổ sung nội dung chi tiết từ hồ sơ khoa học di tích của Ban quản lý.)"
+      ],
+      "tags": [],
+      "scenes": [
+        {
+          "id": "ao-chan-ky-toan-canh",
+          "title": "Toàn cảnh (ảnh mẫu)",
+          "panorama": "panos/ao-chan-ky/toan-canh.jpg",
+          "thumb": "panos/ao-chan-ky/toan-canh-thumb.jpg",
+          "yaw": 0,
+          "sample": true,
+          "info": "Ảnh 360° mẫu minh họa không gian Ao Chấn Kỳ – cần thay bằng ảnh chụp thực tế.",
+          "hotSpots": [
+            {
+              "type": "info",
+              "pitch": 4,
+              "yaw": 0,
+              "text": "Ao Chấn Kỳ – ảnh mẫu minh họa, chưa phải ảnh thực địa"
+            }
+          ]
+        }
+      ],
+      "order": 14,
+      "firstScene": "ao-chan-ky-toan-canh"
+    },
+    {
+      "id": "den-goc-khe",
+      "name": "Đền Gốc Khế",
+      "group": "core",
+      "category": "den",
+      "oldArea": "Xã Nhã Nam",
+      "newArea": "Xã Nhã Nam",
+      "lat": 21.448,
+      "lng": 106.101,
+      "approxCoords": true,
+      "summary": "Đền thuộc cụm di tích Khởi nghĩa Yên Thế",
+      "description": [
+        "Một trong 23 địa điểm thuộc Di tích quốc gia đặc biệt “Những địa điểm Khởi nghĩa Yên Thế” (1884–1913).",
+        "(Bổ sung nội dung chi tiết từ hồ sơ khoa học di tích của Ban quản lý.)"
+      ],
+      "tags": [],
+      "scenes": [
+        {
+          "id": "den-goc-khe-toan-canh",
+          "title": "Toàn cảnh (ảnh mẫu)",
+          "panorama": "panos/den-goc-khe/toan-canh.jpg",
+          "thumb": "panos/den-goc-khe/toan-canh-thumb.jpg",
+          "yaw": 0,
+          "sample": true,
+          "info": "Ảnh 360° mẫu minh họa không gian Đền Gốc Khế – cần thay bằng ảnh chụp thực tế.",
+          "hotSpots": [
+            {
+              "type": "info",
+              "pitch": 4,
+              "yaw": 0,
+              "text": "Đền Gốc Khế – ảnh mẫu minh họa, chưa phải ảnh thực địa"
+            }
+          ]
+        }
+      ],
+      "order": 15,
+      "firstScene": "den-goc-khe-toan-canh"
+    },
+    {
+      "id": "den-ca-trong",
+      "name": "Đền thờ Cả Trọng",
+      "group": "core",
+      "category": "den",
+      "oldArea": "Xã Nhã Nam",
+      "newArea": "Xã Nhã Nam",
+      "lat": 21.441,
+      "lng": 106.102,
+      "approxCoords": true,
+      "summary": "Đền thờ Cả Trọng, con trai Hoàng Hoa Thám",
+      "description": [
+        "Một trong 23 địa điểm thuộc Di tích quốc gia đặc biệt “Những địa điểm Khởi nghĩa Yên Thế” (1884–1913).",
+        "Đền thờ Cả Trọng – con trai của Hoàng Hoa Thám, một thủ lĩnh của nghĩa quân Yên Thế.",
+        "(Bổ sung nội dung chi tiết từ hồ sơ khoa học di tích của Ban quản lý.)"
+      ],
+      "tags": [
+        "hoang-hoa-tham"
+      ],
+      "scenes": [
+        {
+          "id": "den-ca-trong-toan-canh",
+          "title": "Toàn cảnh (ảnh mẫu)",
+          "panorama": "panos/den-ca-trong/toan-canh.jpg",
+          "thumb": "panos/den-ca-trong/toan-canh-thumb.jpg",
+          "yaw": 0,
+          "sample": true,
+          "info": "Ảnh 360° mẫu minh họa không gian Đền thờ Cả Trọng – cần thay bằng ảnh chụp thực tế.",
+          "hotSpots": [
+            {
+              "type": "info",
+              "pitch": 4,
+              "yaw": 0,
+              "text": "Đền thờ Cả Trọng – ảnh mẫu minh họa, chưa phải ảnh thực địa"
+            }
+          ]
+        }
+      ],
+      "order": 16,
+      "firstScene": "den-ca-trong-toan-canh"
+    },
+    {
+      "id": "nghia-dia-phap-doi-phu",
+      "name": "Nghĩa địa Pháp, Đồi Phủ",
+      "group": "core",
+      "category": "khac",
+      "oldArea": "Xã Nhã Nam",
+      "newArea": "Xã Nhã Nam",
+      "lat": 21.4495,
+      "lng": 106.0925,
+      "approxCoords": true,
+      "summary": "Dấu tích thời kỳ quân Pháp đàn áp khởi nghĩa",
+      "description": [
+        "Một trong 23 địa điểm thuộc Di tích quốc gia đặc biệt “Những địa điểm Khởi nghĩa Yên Thế” (1884–1913).",
+        "(Bổ sung nội dung chi tiết từ hồ sơ khoa học di tích của Ban quản lý.)"
+      ],
+      "tags": [
+        "phap"
+      ],
+      "scenes": [
+        {
+          "id": "nghia-dia-phap-doi-phu-toan-canh",
+          "title": "Toàn cảnh (ảnh mẫu)",
+          "panorama": "panos/nghia-dia-phap-doi-phu/toan-canh.jpg",
+          "thumb": "panos/nghia-dia-phap-doi-phu/toan-canh-thumb.jpg",
+          "yaw": 0,
+          "sample": true,
+          "info": "Ảnh 360° mẫu minh họa không gian Nghĩa địa Pháp, Đồi Phủ – cần thay bằng ảnh chụp thực tế.",
+          "hotSpots": [
+            {
+              "type": "info",
+              "pitch": 4,
+              "yaw": 0,
+              "text": "Nghĩa địa Pháp, Đồi Phủ – ảnh mẫu minh họa, chưa phải ảnh thực địa"
+            }
+          ]
+        }
+      ],
+      "order": 17,
+      "firstScene": "nghia-dia-phap-doi-phu-toan-canh"
+    },
+    {
+      "id": "dinh-cao-thuong",
+      "name": "Đình Cao Thượng",
+      "group": "core",
+      "category": "den",
+      "oldArea": "TT Cao Thượng",
+      "newArea": "Xã Tân Yên",
+      "lat": 21.3801,
+      "lng": 106.1357,
+      "approxCoords": true,
+      "summary": "Đình làng thuộc cụm di tích Khởi nghĩa Yên Thế",
+      "description": [
+        "Một trong 23 địa điểm thuộc Di tích quốc gia đặc biệt “Những địa điểm Khởi nghĩa Yên Thế” (1884–1913).",
+        "(Bổ sung nội dung chi tiết từ hồ sơ khoa học di tích của Ban quản lý.)"
+      ],
+      "tags": [],
+      "scenes": [
+        {
+          "id": "dinh-cao-thuong-toan-canh",
+          "title": "Toàn cảnh (ảnh mẫu)",
+          "panorama": "panos/dinh-cao-thuong/toan-canh.jpg",
+          "thumb": "panos/dinh-cao-thuong/toan-canh-thumb.jpg",
+          "yaw": 0,
+          "sample": true,
+          "info": "Ảnh 360° mẫu minh họa không gian Đình Cao Thượng – cần thay bằng ảnh chụp thực tế.",
+          "hotSpots": [
+            {
+              "type": "info",
+              "pitch": 4,
+              "yaw": 0,
+              "text": "Đình Cao Thượng – ảnh mẫu minh họa, chưa phải ảnh thực địa"
+            }
+          ]
+        }
+      ],
+      "order": 18,
+      "firstScene": "dinh-cao-thuong-toan-canh"
+    },
+    {
+      "id": "dinh-noi",
+      "name": "Đình Nội",
+      "group": "core",
+      "category": "den",
+      "oldArea": "Xã Việt Lập",
+      "newArea": "Xã Tân Yên",
+      "lat": 21.36,
+      "lng": 106.11,
+      "approxCoords": true,
+      "summary": "Đình làng thuộc cụm di tích Khởi nghĩa Yên Thế",
+      "description": [
+        "Một trong 23 địa điểm thuộc Di tích quốc gia đặc biệt “Những địa điểm Khởi nghĩa Yên Thế” (1884–1913).",
+        "(Bổ sung nội dung chi tiết từ hồ sơ khoa học di tích của Ban quản lý.)"
+      ],
+      "tags": [],
+      "scenes": [
+        {
+          "id": "dinh-noi-toan-canh",
+          "title": "Toàn cảnh (ảnh mẫu)",
+          "panorama": "panos/dinh-noi/toan-canh.jpg",
+          "thumb": "panos/dinh-noi/toan-canh-thumb.jpg",
+          "yaw": 0,
+          "sample": true,
+          "info": "Ảnh 360° mẫu minh họa không gian Đình Nội – cần thay bằng ảnh chụp thực tế.",
+          "hotSpots": [
+            {
+              "type": "info",
+              "pitch": 4,
+              "yaw": 0,
+              "text": "Đình Nội – ảnh mẫu minh họa, chưa phải ảnh thực địa"
+            }
+          ]
+        }
+      ],
+      "order": 19,
+      "firstScene": "dinh-noi-toan-canh"
+    },
+    {
+      "id": "khu-luu-niem-hoang-hoa-tham",
+      "name": "Khu lưu niệm danh nhân Hoàng Hoa Thám",
+      "group": "core",
+      "category": "khac",
+      "oldArea": "Xã Ngọc Châu",
+      "newArea": "Xã Ngọc Thiện",
+      "lat": 21.366,
+      "lng": 106.07,
+      "approxCoords": true,
+      "summary": "Khu lưu niệm thủ lĩnh Hoàng Hoa Thám",
+      "description": [
+        "Một trong 23 địa điểm thuộc Di tích quốc gia đặc biệt “Những địa điểm Khởi nghĩa Yên Thế” (1884–1913).",
+        "Khu lưu niệm danh nhân Hoàng Hoa Thám (Đề Thám) – thủ lĩnh tiêu biểu của cuộc khởi nghĩa Yên Thế.",
+        "(Bổ sung nội dung chi tiết từ hồ sơ khoa học di tích của Ban quản lý.)"
+      ],
+      "tags": [
+        "hoang-hoa-tham"
+      ],
+      "scenes": [
+        {
+          "id": "khu-luu-niem-hoang-hoa-tham-toan-canh",
+          "title": "Toàn cảnh (ảnh mẫu)",
+          "panorama": "panos/khu-luu-niem-hoang-hoa-tham/toan-canh.jpg",
+          "thumb": "panos/khu-luu-niem-hoang-hoa-tham/toan-canh-thumb.jpg",
+          "yaw": 0,
+          "sample": true,
+          "info": "Ảnh 360° mẫu minh họa không gian Khu lưu niệm danh nhân Hoàng Hoa Thám – cần thay bằng ảnh chụp thực tế.",
+          "hotSpots": [
+            {
+              "type": "info",
+              "pitch": 4,
+              "yaw": 0,
+              "text": "Khu lưu niệm danh nhân Hoàng Hoa Thám – ảnh mẫu minh họa, chưa phải ảnh thực địa"
+            }
+          ]
+        }
+      ],
+      "order": 20,
+      "firstScene": "khu-luu-niem-hoang-hoa-tham-toan-canh"
+    },
+    {
+      "id": "cum-di-tich-cau-vong",
+      "name": "Cụm di tích Cầu Vồng",
+      "group": "core",
+      "category": "khac",
+      "oldArea": "Xã Song Vân",
+      "newArea": "Xã Ngọc Thiện",
+      "lat": 21.37,
+      "lng": 106.04,
+      "approxCoords": true,
+      "summary": "Cụm di tích thuộc Khởi nghĩa Yên Thế",
+      "description": [
+        "Một trong 23 địa điểm thuộc Di tích quốc gia đặc biệt “Những địa điểm Khởi nghĩa Yên Thế” (1884–1913).",
+        "(Bổ sung nội dung chi tiết từ hồ sơ khoa học di tích của Ban quản lý.)"
+      ],
+      "tags": [],
+      "scenes": [
+        {
+          "id": "cum-di-tich-cau-vong-toan-canh",
+          "title": "Toàn cảnh (ảnh mẫu)",
+          "panorama": "panos/cum-di-tich-cau-vong/toan-canh.jpg",
+          "thumb": "panos/cum-di-tich-cau-vong/toan-canh-thumb.jpg",
+          "yaw": 0,
+          "sample": true,
+          "info": "Ảnh 360° mẫu minh họa không gian Cụm di tích Cầu Vồng – cần thay bằng ảnh chụp thực tế.",
+          "hotSpots": [
+            {
+              "type": "info",
+              "pitch": 4,
+              "yaw": 0,
+              "text": "Cụm di tích Cầu Vồng – ảnh mẫu minh họa, chưa phải ảnh thực địa"
+            }
+          ]
+        }
+      ],
+      "order": 21,
+      "firstScene": "cum-di-tich-cau-vong-toan-canh"
+    },
+    {
+      "id": "chua-kem",
+      "name": "Chùa Kem",
+      "group": "core",
+      "category": "chua",
+      "oldArea": "Xã Nham Sơn",
+      "newArea": "Phường Yên Dũng",
+      "lat": 21.2035,
+      "lng": 106.2173,
+      "approxCoords": true,
+      "summary": "Chùa thuộc cụm di tích Khởi nghĩa Yên Thế",
+      "description": [
+        "Một trong 23 địa điểm thuộc Di tích quốc gia đặc biệt “Những địa điểm Khởi nghĩa Yên Thế” (1884–1913).",
+        "(Bổ sung nội dung chi tiết từ hồ sơ khoa học di tích của Ban quản lý.)"
+      ],
+      "tags": [],
+      "scenes": [
+        {
+          "id": "chua-kem-toan-canh",
+          "title": "Toàn cảnh (ảnh mẫu)",
+          "panorama": "panos/chua-kem/toan-canh.jpg",
+          "thumb": "panos/chua-kem/toan-canh-thumb.jpg",
+          "yaw": 0,
+          "sample": true,
+          "info": "Ảnh 360° mẫu minh họa không gian Chùa Kem – cần thay bằng ảnh chụp thực tế.",
+          "hotSpots": [
+            {
+              "type": "info",
+              "pitch": 4,
+              "yaw": 0,
+              "text": "Chùa Kem – ảnh mẫu minh họa, chưa phải ảnh thực địa"
+            }
+          ]
+        }
+      ],
+      "order": 22,
+      "firstScene": "chua-kem-toan-canh"
+    },
+    {
+      "id": "dinh-dong",
+      "name": "Đình Đồng",
+      "group": "core",
+      "category": "den",
+      "oldArea": "Xã Bích Sơn",
+      "newArea": "Phường Việt Yên",
+      "lat": 21.2754,
+      "lng": 106.0964,
+      "approxCoords": true,
+      "summary": "Đình làng thuộc cụm di tích Khởi nghĩa Yên Thế",
+      "description": [
+        "Một trong 23 địa điểm thuộc Di tích quốc gia đặc biệt “Những địa điểm Khởi nghĩa Yên Thế” (1884–1913).",
+        "(Bổ sung nội dung chi tiết từ hồ sơ khoa học di tích của Ban quản lý.)"
+      ],
+      "tags": [],
+      "scenes": [
+        {
+          "id": "dinh-dong-toan-canh",
+          "title": "Toàn cảnh (ảnh mẫu)",
+          "panorama": "panos/dinh-dong/toan-canh.jpg",
+          "thumb": "panos/dinh-dong/toan-canh-thumb.jpg",
+          "yaw": 0,
+          "sample": true,
+          "info": "Ảnh 360° mẫu minh họa không gian Đình Đồng – cần thay bằng ảnh chụp thực tế.",
+          "hotSpots": [
+            {
+              "type": "info",
+              "pitch": 4,
+              "yaw": 0,
+              "text": "Đình Đồng – ảnh mẫu minh họa, chưa phải ảnh thực địa"
+            }
+          ]
+        }
+      ],
+      "order": 23,
+      "firstScene": "dinh-dong-toan-canh"
     },
     {
       "id": "chua-tu-giap",
       "name": "Chùa Tứ Giáp",
-      "location": "Yên Thế, Bắc Giang",
-      "lat": 21.5300,
-      "lng": 106.1200,
-      "summary": "Điểm di tích liên quan đến khởi nghĩa Yên Thế.",
+      "group": "extended",
+      "category": "chua",
+      "oldArea": "",
+      "newArea": "Xã Nhã Nam",
+      "lat": 21.438,
+      "lng": 106.115,
+      "approxCoords": true,
+      "summary": "Nơi khởi phát Sáu điều Bác Hồ dạy Công an nhân dân",
       "description": [
-        "(Bổ sung nội dung chi tiết về Chùa Tứ Giáp.)"
+        "Điểm mở rộng trong “Hành trình kết nối giá trị di sản” – không thuộc phạm vi xếp hạng Di tích quốc gia đặc biệt “Những địa điểm Khởi nghĩa Yên Thế”.",
+        "Chùa Tứ Giáp gắn với sự kiện khởi phát Sáu điều Bác Hồ dạy Công an nhân dân.",
+        "(Bổ sung nội dung chi tiết từ hồ sơ khoa học di tích của Ban quản lý.)"
       ],
-      "firstScene": "ctg-san",
+      "tags": [
+        "bac-ho",
+        "cand"
+      ],
       "scenes": [
         {
           "id": "ctg-san",
@@ -122,9 +1057,94 @@
           "panorama": "panos/chua-tu-giap/san.jpg",
           "thumb": "panos/chua-tu-giap/san-thumb.jpg",
           "yaw": 0,
+          "info": "Sân chùa Tứ Giáp.",
           "hotSpots": []
         }
-      ]
+      ],
+      "firstScene": "ctg-san",
+      "audio": "audio/chua-tu-giap.mp3",
+      "order": 24
+    },
+    {
+      "id": "khu-luu-niem-6-dieu-bac-ho",
+      "name": "Khu lưu niệm Sáu điều Bác Hồ dạy CAND",
+      "group": "extended",
+      "category": "khac",
+      "oldArea": "",
+      "newArea": "Xã Nhã Nam",
+      "lat": 21.4372,
+      "lng": 106.1172,
+      "approxCoords": true,
+      "summary": "Khu lưu niệm Sáu điều Bác Hồ dạy Công an nhân dân",
+      "description": [
+        "Điểm mở rộng trong “Hành trình kết nối giá trị di sản” – không thuộc phạm vi xếp hạng Di tích quốc gia đặc biệt “Những địa điểm Khởi nghĩa Yên Thế”.",
+        "Khu lưu niệm Sáu điều Bác Hồ dạy Công an nhân dân – địa chỉ giáo dục truyền thống, đạo đức cách mạng.",
+        "(Bổ sung nội dung chi tiết từ hồ sơ khoa học di tích của Ban quản lý.)"
+      ],
+      "tags": [
+        "bac-ho",
+        "cand"
+      ],
+      "scenes": [
+        {
+          "id": "khu-luu-niem-6-dieu-bac-ho-toan-canh",
+          "title": "Toàn cảnh (ảnh mẫu)",
+          "panorama": "panos/khu-luu-niem-6-dieu-bac-ho/toan-canh.jpg",
+          "thumb": "panos/khu-luu-niem-6-dieu-bac-ho/toan-canh-thumb.jpg",
+          "yaw": 0,
+          "sample": true,
+          "info": "Ảnh 360° mẫu minh họa không gian Khu lưu niệm Sáu điều Bác Hồ dạy CAND – cần thay bằng ảnh chụp thực tế.",
+          "hotSpots": [
+            {
+              "type": "info",
+              "pitch": 4,
+              "yaw": 0,
+              "text": "Khu lưu niệm Sáu điều Bác Hồ dạy CAND – ảnh mẫu minh họa, chưa phải ảnh thực địa"
+            }
+          ]
+        }
+      ],
+      "order": 25,
+      "firstScene": "khu-luu-niem-6-dieu-bac-ho-toan-canh"
+    },
+    {
+      "id": "chua-phuc-son",
+      "name": "Chùa Phúc Sơn",
+      "group": "extended",
+      "category": "chua",
+      "oldArea": "",
+      "newArea": "Tân Yên",
+      "lat": 21.405,
+      "lng": 106.075,
+      "approxCoords": true,
+      "summary": "Di tích tôn giáo gắn với vùng Yên Thế",
+      "description": [
+        "Điểm mở rộng trong “Hành trình kết nối giá trị di sản” – không thuộc phạm vi xếp hạng Di tích quốc gia đặc biệt “Những địa điểm Khởi nghĩa Yên Thế”.",
+        "Chùa Phúc Sơn (Tân Yên) – điểm kết thúc của hành trình giáo dục.",
+        "(Bổ sung nội dung chi tiết từ hồ sơ khoa học di tích của Ban quản lý.)"
+      ],
+      "tags": [],
+      "scenes": [
+        {
+          "id": "chua-phuc-son-toan-canh",
+          "title": "Toàn cảnh (ảnh mẫu)",
+          "panorama": "panos/chua-phuc-son/toan-canh.jpg",
+          "thumb": "panos/chua-phuc-son/toan-canh-thumb.jpg",
+          "yaw": 0,
+          "sample": true,
+          "info": "Ảnh 360° mẫu minh họa không gian Chùa Phúc Sơn – cần thay bằng ảnh chụp thực tế.",
+          "hotSpots": [
+            {
+              "type": "info",
+              "pitch": 4,
+              "yaw": 0,
+              "text": "Chùa Phúc Sơn – ảnh mẫu minh họa, chưa phải ảnh thực địa"
+            }
+          ]
+        }
+      ],
+      "order": 26,
+      "firstScene": "chua-phuc-son-toan-canh"
     }
   ]
 }
